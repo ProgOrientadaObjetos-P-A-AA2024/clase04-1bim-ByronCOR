@@ -10,7 +10,9 @@ package paquete3;
  */
 public class Principal {
     public static void main(String[] args) {
-        
+        /*En esta instancia se esta haciendo el uso del constructor por defecto
+        debido a que no encuentra uno en la clase Computadora*/
+        Computadora computadoraTrabajo= new Computadora();
     }
     
 }
