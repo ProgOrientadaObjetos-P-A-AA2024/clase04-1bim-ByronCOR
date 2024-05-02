@@ -22,11 +22,11 @@ public class Hospital {
     */
     
     
-    public Hospital(){
-        nombre = "na";
-        ciudad = "ciu";
-        numeroDoctores = 100;
-        numeroEnfermeros = 400;
+    public Hospital(String na,String ciu,int nd,int ne){
+        nombre = na;
+        ciudad = ciu;
+        numeroDoctores = nd;
+        numeroEnfermeros = ne;
     }
     
         
@@ -65,7 +65,11 @@ public class Hospital {
     @Override
     public String toString(){
         // String cadena = String.format("%s \n", nombre);
-        String cadena = String.format("%s \n", obtenerNombre());
+        String cadena = String.format("%s %s %d %d \n"
+                ,obtenerNombre()
+                ,obtenerCiudad()
+                ,obtenerNumeroDoctores()
+                ,obtenerNumeroEnfermeros());
         return cadena;
     }
     
