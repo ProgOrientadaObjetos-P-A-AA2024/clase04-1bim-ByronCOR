@@ -61,7 +61,8 @@ public class FacturaTelefonica {
         return valorFactura;
     }
 
-    public String obtenercadena() {
+     @Override
+    public String toString() {
         String cadena = String.format("Número telefónico: %s\n"
                 + "Minutos mes: %.2f\nValor minuto: %.2f\n"
                 + "Valor factura: %.2f\n", obtenerNumeroTelefono(),

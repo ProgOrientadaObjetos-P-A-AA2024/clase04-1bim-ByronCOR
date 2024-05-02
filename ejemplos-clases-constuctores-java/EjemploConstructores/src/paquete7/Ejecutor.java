@@ -13,7 +13,7 @@ public class Ejecutor {
         // se llama al método que calcula el valor de la factura
         fac.calcularValorFactura(); 
         System.out.println("Objeto sin argumentos\n");
-        System.out.printf("%s", fac.obtenercadena());
+        System.out.printf("%s", fac);
         
         // Se crea un objeto haciendo referencia al constructor 
         // con argumentos de la clase
@@ -26,6 +26,6 @@ public class Ejecutor {
         // se llama al método que calcula el valor de la factura
         fac2.calcularValorFactura(); 
         System.out.println("\nObjeto con argumentos\n");
-        System.out.printf("%s", fac2.obtenercadena());
+        System.out.printf("%s", fac);
     }
 }
